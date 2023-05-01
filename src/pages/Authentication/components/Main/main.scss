@@ -1,5 +1,5 @@
 main {
-  height: 86.4vh;
+  height: 88vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,5 +11,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 100vh;
   }
 }

@@ -10,10 +10,10 @@ interface HeaderProps {
 export function Header({ href, children }: HeaderProps) {
   return (
     <header>
-      <div>
+      <div className='logo'>
         <img alt="logo" src="/svgs/Logo.svg" />
       </div>
-      <div>
+      <div className='link'>
         <Link to={href}>{children}</Link>
       </div>
     </header>
