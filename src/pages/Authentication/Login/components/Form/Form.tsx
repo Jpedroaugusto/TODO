@@ -26,7 +26,11 @@ export function FormSignIn() {
       const response = await api.post('/Auth/login', { ...data });
       const { user, accessToken }: LoggedUserProps = response.data;
 
-      console.log(user, accessToken);
+      Swal.fire({
+        icon:'success',
+        title: 'Sucesso...',
+        text: `Usuário: ${user.email} foi logado`
+      })
     } catch (error) {
       Swal.fire({
         icon: 'error',
