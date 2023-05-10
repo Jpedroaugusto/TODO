@@ -1,6 +1,6 @@
 interface LabelProps {
   children: string;
-  htmlFor: string;
+  htmlFor?: string;
 }
 
 export function Label({ children, htmlFor }: LabelProps) {

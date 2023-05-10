@@ -1,5 +1,5 @@
 import './border.scss';
 
 export function Border() {
-  return <span></span>;
+  return <span className='border-title'></span>;
 }

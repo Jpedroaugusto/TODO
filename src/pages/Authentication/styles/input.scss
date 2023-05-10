@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Karla';
-  src: url('../../../../../assets/fonts/Karla/Karla-Regular.ttf');
+  src: url('/fonts/Karla/Karla-Regular.ttf');
 }
 
 .input-field {
   display: flex;
   flex-direction: column;
-  row-gap: 3px;
+  row-gap: 5px;
   
   input {
     padding: 15px 10px;
@@ -24,11 +24,16 @@
     }
   }
 
-  label {
+  label,p {
     font-family: 'Karla';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     color: #e9ecef;
+  }
+
+  p {
+    font-size: .9rem;
+    color: red;
   }
 }
