@@ -7,6 +7,7 @@ import { Input } from '../../../../../shared/components/Form/components/Input/In
 
 import { schema, FormData } from './schema';
 import api from '../../../../../services/api';
+import Swal from 'sweetalert2';
 
 interface SignInProps {
   id: string;
@@ -27,7 +28,11 @@ export function FormSignIn() {
 
       console.log(user, accessToken);
     } catch (error) {
-      console.log(error);
+      Swal.fire({
+        icon: 'error',
+        title: "Ops...",
+        text: `Usuário: ${data.email} não cadastrado`
+      })
     }
   }
 

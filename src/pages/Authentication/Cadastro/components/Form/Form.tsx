@@ -41,7 +41,7 @@ export function FormSignUp() {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Usuário já cadastrado!'
+        text: `Usuário: ${data.email} já foi cadastrado!`
       })
     }
   }
