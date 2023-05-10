@@ -25,6 +25,7 @@ export function FormSignIn() {
     try {
       const response = await api.post('/Auth/login', { ...data });
       const { user, accessToken }: LoggedUserProps = response.data;
+      api.defaults.headers.Authorization = `Bearer ${accessToken}`
 
       Swal.fire({
         icon:'success',
